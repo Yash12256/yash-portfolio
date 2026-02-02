@@ -1,0 +1,21 @@
+.footer {
+  padding: 40px 20px;
+  text-align: center;
+  background: #000;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  color: #9ca3af;
+}
+
+.footer-links {
+  margin: 10px 0;
+}
+
+.footer-links a {
+  margin: 0 12px;
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #7c7cff;
+}

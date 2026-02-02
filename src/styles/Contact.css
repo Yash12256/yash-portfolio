@@ -1,0 +1,111 @@
+.contact-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 120px 20px;
+  background: radial-gradient(circle at top, #0b0f14, #000);
+  animation: fadeIn 0.8s ease;
+}
+
+/* Card */
+.contact-card {
+  max-width: 600px;
+  width: 100%;
+  padding: 50px 40px;
+  text-align: center;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Title */
+.contact-card h2 {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 15px;
+  color: #e5e7eb;
+}
+
+/* Subtitle */
+.contact-text {
+  color: #9ca3af;
+  font-size: 16px;
+  margin-bottom: 35px;
+}
+
+/* Info */
+.contact-info {
+  margin-bottom: 35px;
+}
+
+.contact-info a {
+  display: block;
+  margin-bottom: 12px;
+  color: #38bdf8;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.contact-info p {
+  color: #9ca3af;
+  font-size: 15px;
+}
+
+/* Buttons */
+.contact-actions {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.primary-btn {
+  background: #7c7cff;
+  color: #0b0f14;
+  padding: 12px 28px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.primary-btn:hover {
+  opacity: 0.85;
+}
+
+.secondary-btn {
+  border: 1px solid #38bdf8;
+  color: #38bdf8;
+  padding: 12px 28px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.secondary-btn:hover {
+  background: #38bdf8;
+  color: #0b0f14;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .contact-card {
+    padding: 40px 25px;
+  }
+
+  .contact-actions {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,24 @@
+.cta {
+  padding: 100px 20px;
+  text-align: center;
+  background: radial-gradient(circle at top, #0b0f14, #000);
+}
+
+.cta h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.cta p {
+  color: #9ca3af;
+  margin-bottom: 30px;
+}
+
+.cta-btn {
+  padding: 14px 36px;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #7c7cff, #38bdf8);
+  color: #000;
+  font-weight: 600;
+  text-decoration: none;
+}

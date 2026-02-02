@@ -1,0 +1,153 @@
+.about-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 120px 20px;
+  background: radial-gradient(circle at top, #0b0f14, #000);
+  animation: fadeIn 0.8s ease;
+}
+
+/* Main card */
+.about-card {
+  max-width: 900px;
+  padding: 55px 50px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Title */
+.about-card h2 {
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #e5e7eb;
+}
+
+/* Intro line */
+.about-intro {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #e5e7eb;
+}
+
+.about-intro span {
+  color: #7c7cff;
+  font-weight: 600;
+}
+
+/* Paragraphs */
+.about-card p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #9ca3af;
+  margin-bottom: 18px;
+}
+
+/* Highlights */
+.about-highlights {
+  margin: 35px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.about-highlights div {
+  padding: 14px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  font-size: 15px;
+  color: #e5e7eb;
+}
+
+/* Education */
+.education-section {
+  margin-top: 35px;
+  text-align: center;
+}
+
+.education-section h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #38bdf8;
+}
+
+.education-section p {
+  font-size: 15px;
+  color: #9ca3af;
+}
+
+.education-section span {
+  color: #e5e7eb;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .about-card {
+    padding: 40px 25px;
+  }
+
+  .about-card h2 {
+    font-size: 32px;
+  }
+}
+/* Small section label */
+.about-label {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #38bdf8;
+  margin-bottom: 10px;
+}
+
+/* Stronger intro paragraph */
+.about-intro {
+  font-size: 18px;
+  line-height: 1.9;
+  color: #e5e7eb;
+  margin-bottom: 25px;
+}
+
+/* Left accent line for card */
+.about-card {
+  position: relative;
+}
+
+.about-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 40px;
+  bottom: 40px;
+  width: 4px;
+  background: linear-gradient(#7c7cff, #38bdf8);
+  border-radius: 10px;
+}
+
+/* Improve highlight cards */
+.about-highlights div {
+  transition: all 0.3s ease;
+}
+
+.about-highlights div:hover {
+  transform: translateY(-4px);
+  border-color: #7c7cff;
+  box-shadow: 0 8px 20px rgba(124, 124, 255, 0.25);
+}
