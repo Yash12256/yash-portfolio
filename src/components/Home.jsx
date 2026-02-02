@@ -18,9 +18,13 @@ const Home = ({ setPage }) => {
         </p>
 
         <div className="home-buttons">
-          <a href="/resume.pdf" className="btn primary">
-            Download Resume
-          </a>
+          <a
+  href={`${import.meta.env.BASE_URL}resume.pdf`}
+  download
+  className="btn primary"
+>
+  Download Resume
+</a>
 
           <button
             className="btn secondary"
